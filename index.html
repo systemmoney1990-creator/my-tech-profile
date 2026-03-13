@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fongang Maxwell — DevOps Student</title>
+  <meta name="description" content="Price Maxwell — DevOps student at LIONTECH CANADA. Skills: CI/CD, Docker, Kubernetes, AWS, Terraform." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
+      --maxw:1000px;
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071024 0%, #0f1724 100%);color:#e6eef6}
+    .wrap{max-width:var(--maxw);margin:36px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:36px;color:#021124;box-shadow:0 6px 20px rgba(2,17,36,0.6)}
+    h1{font-size:28px;margin:0}
+    .subtitle{color:var(--muted);margin-top:6px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:24px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,8,23,0.6)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .projects{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+    .proj{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:12px;border-radius:8px}
+    a.button{display:inline-block;background:var(--accent);color:#042126;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+    footer{margin-top:26px;color:var(--muted);font-size:13px}
+    .contact{display:flex;flex-direction:column;gap:8px}
+    .socials{display:flex;gap:10px}
+    .small{font-size:13px;color:var(--muted)}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:96px;height:96px;font-size:28px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">PM</div>
+      <div>
+        <h1>Price Maxwell</h1>
+        <div class="subtitle">DevOps Student at LIONTECH CANADA — CI/CD • Docker • Kubernetes • Cloud</div>
+        <div style="margin-top:10px">
+          <a class="button" href="#projects">View projects</a>
+          <a class="button" style="background:#1f2937;color:#e6eef6;margin-left:8px" href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2 style="margin:0 0 8px 0">About</h2>
+          <p class="small">Hi — I'm Price Maxwell, a DevOps student at LIONTECH CANADA focused on building reliable, automated delivery pipelines and infrastructure-as-code. I enjoy containerisation, observability, and making deployments repeatable and secure.</p>
+          <h3 style="margin-top:14px">Skills</h3>
+          <div class="skills">
+            <div class="skill">Docker</div>
+            <div class="skill">Kubernetes</div>
+            <div class="skill">CI/CD (GitHub Actions)</div>
+            <div class="skill">Terraform</div>
+            <div class="skill">AWS (EC2, S3, IAM)</div>
+            <div class="skill">Bash & PowerShell</div>
+            <div class="skill">Monitoring (Prometheus)</div>
+            <div class="skill">Linux</div>
+          </div>
+        </section>
+
+        <section id="projects" class="card" style="margin-top:18px">
+          <h2 style="margin:0 0 8px 0">Selected projects</h2>
+          <div class="projects">
+            <div class="proj">
+              <strong>CI/CD pipeline for sample app</strong>
+              <div class="small">Built GitHub Actions pipeline with automated tests, build, container publish, and deployment to a Docker host.</div>
+              <div style="margin-top:8px"><a href="#" class="small">Repository</a></div>
+            </div>
+            <div class="proj">
+              <strong>Terraform infra for demo app</strong>
+              <div class="small">I wrote Terraform modules to provision network, compute, and storage resources on AWS for a fault-tolerant demo.</div>
+              <div style="margin-top:8px"><a href="#" class="small">Repository</a></div>
+            </div>
+            <div class="proj">
+              <strong>K8s rollout & monitoring</strong>
+              <div class="small">Deployed a microservice stack to Kubernetes with Helm charts and Prometheus metrics collection.</div>
+              <div style="margin-top:8px"><a href="#" class="small">Repository</a></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="card" style="margin-top:18px">
+          <h2 style="margin:0 0 8px 0">Contact</h2>
+          <div class="contact">
+            <div class="small">Email: <a id="emailLink" href="mailto:price.maxwell@example.com">price.maxwell@example.com</a> <button id="copyBtn" style="margin-left:8px;padding:6px;border-radius:6px;border:none;background:#6ee7b7;color:#042126;cursor:pointer">Copy</button></div>
+            <div class="socials">
+              <a class="small" href="#">GitHub</a>
+              <a class="small" href="#">LinkedIn</a>
+              <a class="small" href="#">Resume (PDF)</a>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin:0 0 8px 0">Quick facts</h3>
+          <ul class="small" style="padding-left:18px;margin:0">
+            <li>Location: Canada</li>
+            <li>Role: DevOps Student — LIONTECH CANADA</li>
+            <li>Open to internships & projects</li>
+          </ul>
+          <div style="margin-top:12px">
+            <a class="button" href="mailto:price.maxwell@example.com">Hire / Contact</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px;text-align:center">
+          <div class="small">Want this live?</div>
+          <div style="margin-top:8px"><a class="button" href="#" style="background:#ef4444;color:#fff">Deploy to GitHub Pages</a></div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="small">© Price Maxwell — DevOps Student at LIONTECH CANADA</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('copyBtn').addEventListener('click', async function(){
+      const txt = 'price.maxwell@example.com';
+      try{ await navigator.clipboard.writeText(txt); this.textContent='Copied'; setTimeout(()=>this.textContent='Copy',1500)}catch(e){alert('Copy failed — manually select the email.')}    
+    })
+  </script>
+</body>
+</html>
